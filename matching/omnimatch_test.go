@@ -2,8 +2,8 @@ package matching
 
 import (
 	"encoding/json"
+	"github.com/akara-io/zxcvbn/match"
 	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn/match"
 	"os"
 	"testing"
 )

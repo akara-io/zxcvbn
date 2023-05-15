@@ -3,7 +3,7 @@ package matching
 import (
 	"strings"
 
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/akara-io/zxcvbn/match"
 )
 
 type dictionaryMatch struct {

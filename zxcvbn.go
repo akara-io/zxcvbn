@@ -4,10 +4,10 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/trustelem/zxcvbn/feedback"
-	"github.com/trustelem/zxcvbn/match"
-	"github.com/trustelem/zxcvbn/matching"
-	"github.com/trustelem/zxcvbn/scoring"
+	"github.com/akara-io/zxcvbn/feedback"
+	"github.com/akara-io/zxcvbn/match"
+	"github.com/akara-io/zxcvbn/matching"
+	"github.com/akara-io/zxcvbn/scoring"
 )
 
 type Result struct {

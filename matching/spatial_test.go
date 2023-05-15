@@ -3,9 +3,9 @@ package matching
 import (
 	"testing"
 
+	"github.com/akara-io/zxcvbn/adjacency"
+	"github.com/akara-io/zxcvbn/match"
 	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn/adjacency"
-	"github.com/trustelem/zxcvbn/match"
 )
 
 func Test_spatialMatch(t *testing.T) {

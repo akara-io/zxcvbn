@@ -4,7 +4,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"testing"
 
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/akara-io/zxcvbn/match"
 )
 
 func Test_dictionaryMatch(t *testing.T) {

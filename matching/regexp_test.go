@@ -1,8 +1,8 @@
 package matching
 
 import (
+	"github.com/akara-io/zxcvbn/match"
 	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn/match"
 	"testing"
 )
 

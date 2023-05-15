@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"testing"
 
+	"github.com/akara-io/zxcvbn/match"
 	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn/match"
 )
 
 var testl33tTable = map[string][]string{

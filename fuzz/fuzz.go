@@ -1,7 +1,7 @@
 package fuzz
 
 import (
-	"github.com/trustelem/zxcvbn"
+	"github.com/akara-io/zxcvbn"
 	"unicode/utf8"
 )
 

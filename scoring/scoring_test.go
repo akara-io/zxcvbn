@@ -3,10 +3,10 @@ package scoring_test
 import (
 	"testing"
 
+	"github.com/akara-io/zxcvbn"
+	"github.com/akara-io/zxcvbn/match"
+	"github.com/akara-io/zxcvbn/scoring"
 	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn"
-	"github.com/trustelem/zxcvbn/match"
-	"github.com/trustelem/zxcvbn/scoring"
 )
 
 func TestMostGuessableMatchSequence(t *testing.T) {

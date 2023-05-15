@@ -2,10 +2,10 @@ package matching
 
 import (
 	"bytes"
-	// "github.com/trustelem/zxcvbn/entropy"
-	"github.com/trustelem/zxcvbn/match"
 	"sort"
 	"strings"
+
+	"github.com/akara-io/zxcvbn/match"
 )
 
 type l33tMatch struct {

@@ -1,9 +1,10 @@
 package matching
 
 import (
+	"github.com/akara-io/zxcvbn/match"
+	"github.com/akara-io/zxcvbn/scoring"
+
 	"github.com/dlclark/regexp2"
-	"github.com/trustelem/zxcvbn/match"
-	"github.com/trustelem/zxcvbn/scoring"
 )
 
 type repeatMatch struct{}

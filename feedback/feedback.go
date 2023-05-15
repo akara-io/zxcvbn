@@ -1,8 +1,8 @@
 package feedback
 
 import (
-	"github.com/trustelem/zxcvbn/match"
-	"github.com/trustelem/zxcvbn/scoring"
+	"github.com/akara-io/zxcvbn/match"
+	"github.com/akara-io/zxcvbn/scoring"
 	"strings"
 )
 

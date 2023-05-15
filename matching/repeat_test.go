@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/akara-io/zxcvbn/match"
 	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn/match"
 )
 
 // removeRepeatBaseData removes extra data not needed for unit tests

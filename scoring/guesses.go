@@ -8,9 +8,9 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/trustelem/zxcvbn/adjacency"
-	"github.com/trustelem/zxcvbn/internal/mathutils"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/akara-io/zxcvbn/adjacency"
+	"github.com/akara-io/zxcvbn/internal/mathutils"
+	"github.com/akara-io/zxcvbn/match"
 )
 
 const (

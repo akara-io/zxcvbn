@@ -1,8 +1,8 @@
 package feedback_test
 
 import (
-	"github.com/trustelem/zxcvbn"
-	"github.com/trustelem/zxcvbn/feedback"
+	"github.com/akara-io/zxcvbn"
+	"github.com/akara-io/zxcvbn/feedback"
 	"testing"
 
 	"github.com/stretchr/testify/assert"

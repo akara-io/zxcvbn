@@ -1,10 +1,11 @@
 package matching
 
 import (
-	"github.com/trustelem/zxcvbn/adjacency"
-	"github.com/trustelem/zxcvbn/frequency"
-	"github.com/trustelem/zxcvbn/match"
 	"regexp"
+	
+	"github.com/akara-io/zxcvbn/adjacency"
+	"github.com/akara-io/zxcvbn/frequency"
+	"github.com/akara-io/zxcvbn/match"
 )
 
 func Omnimatch(password string, userInputs []string) (matches []*match.Match) {

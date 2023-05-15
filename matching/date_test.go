@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/akara-io/zxcvbn/match"
 	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn/match"
 )
 
 func Test_dateMatch(t *testing.T) {

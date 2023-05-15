@@ -4,12 +4,12 @@ import (
 	"math"
 	"testing"
 
+	"github.com/akara-io/zxcvbn/adjacency"
+	"github.com/akara-io/zxcvbn/internal/mathutils"
+	"github.com/akara-io/zxcvbn/match"
+	"github.com/akara-io/zxcvbn/matching"
+	"github.com/akara-io/zxcvbn/scoring"
 	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn/adjacency"
-	"github.com/trustelem/zxcvbn/internal/mathutils"
-	"github.com/trustelem/zxcvbn/match"
-	"github.com/trustelem/zxcvbn/matching"
-	"github.com/trustelem/zxcvbn/scoring"
 )
 
 func TestRepeatGuesses(t *testing.T) {
