@@ -91,21 +91,21 @@ func DictionaryGuesses(m *match.Match) float64 {
 	return float64(m.BaseGuesses) * float64(m.UppercaseVariations) * float64(m.L33tVariations) * float64(reversedVariations)
 }
 
-var reStartUpper = regexp.MustCompile(`^[A-Z][^A-Z]+$`)
-var reEndUpper = regexp.MustCompile(`^[^A-Z]+[A-Z]$`)
-var reAllUpper = regexp.MustCompile(`^[^a-z]+$`)
-var reAllLower = regexp.MustCompile(`^[^A-Z]+$`)
+var ReStartUpper = regexp.MustCompile(`^[A-Z][^A-Z]+$`)
+var ReEndUpper = regexp.MustCompile(`^[^A-Z]+[A-Z]$`)
+var ReAllUpper = regexp.MustCompile(`^[^a-z]+$`)
+var ReAllLower = regexp.MustCompile(`^[^A-Z]+$`)
 
 func UppercaseVariations(w string) float64 {
-	if reAllLower.MatchString(w) || strings.ToLower(w) == w {
+	if ReAllLower.MatchString(w) || strings.ToLower(w) == w {
 		return 1
 	}
 	// a capitalized word is the most common capitalization scheme,
 	// so it only doubles the search space (uncapitalized + capitalized).
 	// allcaps and end-capitalized are common enough too, underestimate as 2x factor to be safe.
-	if reStartUpper.MatchString(w) ||
-		reEndUpper.MatchString(w) ||
-		reAllUpper.MatchString(w) {
+	if ReStartUpper.MatchString(w) ||
+		ReEndUpper.MatchString(w) ||
+		ReAllUpper.MatchString(w) {
 		return 2
 	}
 	// otherwise calculate the number of ways to capitalize U+L uppercase+lowercase letters

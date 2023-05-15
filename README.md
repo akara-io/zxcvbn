@@ -12,4 +12,11 @@ This port aims to be fully compatible (i.e. give the same results for a given pa
 
 Current status:
 - this library should be 100% compatible (score, sequence and number of guesses) with [release 4.4.2](https://github.com/dropbox/zxcvbn/releases/tag/v4.4.2) of the coffeescript library.
-- feedback messages are missing
+- ~~feedback messages are missing~~
+
+### akara-io updates
+- Added Feedback
+- Feedback tests added with test cases drawn from the [examples](https://lowe.github.io/tryzxcvbn/) referenced on the original Dropbox [zxcvbn repo](https://github.com/dropbox/zxcvbn)
+- 
+TODO:
+- Integrate Feedback tests into `zxcvbn_test.go`

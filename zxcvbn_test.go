@@ -102,3 +102,11 @@ func TestCornerCases(t *testing.T) {
 		_ = PasswordStrength(td, nil)
 	}
 }
+
+func TestFeedbackIsReturned(t *testing.T) {
+	result := PasswordStrength("r0s3bud99", nil)
+	assert.Equal(t, 1, result.Score)
+	assert.Equal(t, "This is similar to a commonly used password", result.Feedback.Warning)
+	assert.Equal(t, "Add another word or two. Uncommon words are better.", result.Feedback.Suggestions[0])
+	assert.Equal(t, "Predictable substitutions like '@' instead of 'a' don't help very much", result.Feedback.Suggestions[1])
+}
