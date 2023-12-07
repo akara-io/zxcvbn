@@ -8,8 +8,8 @@ import (
 
 // Feedback represents feedback to improve a password
 type Feedback struct {
-	Warning     string
-	Suggestions []string
+	Warning     string   `json:"warning"`
+	Suggestions []string `json:"suggestions"`
 }
 
 // New returns an initialised Feedback struct
